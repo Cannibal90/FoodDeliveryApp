@@ -2,7 +2,11 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../sass/main.scss"
+        "../sass/main.scss",
+        "../sass/_colors.scss",
+        "../sass/_small.scss",
+        "../sass/_medium.scss",
+        "../sass/_large.scss"
     ],
     "names": [],
     "file": "main.css"
