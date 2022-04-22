@@ -5,4 +5,48 @@
 			padding: 15px 0;
 		}
 	}
+
+	.home {
+		overflow: hidden;
+
+		&__text-img-wrapper {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+
+		&__text-box {
+			padding: 3em;
+
+			&-title {
+				font-size: 4rem;
+				text-align: left;
+			}
+
+			&-subtitle {
+				font-size: 2.2rem;
+				line-height: 3.2rem;
+				text-align: left;
+			}
+		}
+
+		&__main-img {
+			width: 120%;
+		}
+
+		&__buttons-box {
+			position: absolute;
+			top: 420px;
+			justify-content: flex-start;
+			align-items: start;
+			margin: 0 3em;
+
+			.button {
+				margin: 0 1em;
+			}
+
+			.button:first-child {
+				margin-left: 0;
+			}
+		}
+	}
 }

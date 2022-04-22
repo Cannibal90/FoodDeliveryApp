@@ -1,6 +1,12 @@
 $white: #fff;
-$orange: #fe5000;
+$orange: #fe5100;
+$lighter_orange: #c44911;
 $dark: #121212;
 $gray: #666666;
 $light_gray: #f1f1f1;
 $lighter_gray: #f6f6f6;
+$black_gradient: linear-gradient(
+	45deg,
+	rgba(16, 16, 17, 0.75),
+	rgba(31, 28, 26, 0.75)
+);

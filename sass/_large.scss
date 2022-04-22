@@ -10,6 +10,7 @@
 		justify-content: space-around;
 		padding: 10px;
 		background-color: $light_gray;
+		z-index: 400;
 	}
 
 	.brand {
@@ -55,6 +56,18 @@
 			}
 		}
 	}
+
+	.home {
+		&__buttons-box {
+			top: 75%;
+
+			.button {
+				margin: 0 0.5em;
+				padding: 12px 24px;
+				font-size: 2.2rem;
+			}
+		}
+	}
 }
 @media (min-width: 1200px) {
 	.nav {
@@ -64,6 +77,18 @@
 			&--icon {
 				font-size: 3rem;
 			}
+		}
+	}
+
+	.home {
+		&__text-box {
+			&-title {
+				font-size: 4.4rem;
+			}
+		}
+
+		&__main-img {
+			margin-left: 1em;
 		}
 	}
 }
