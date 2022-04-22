@@ -1,4 +1,69 @@
 @media (min-width: 992px) {
+	.hamburger {
+		display: none;
+	}
+
+	.header {
+		position: sticky;
+		top: 0;
+		height: 170px;
+		justify-content: space-around;
+		padding: 10px;
+		background-color: $light_gray;
+	}
+
+	.brand {
+		&__title {
+			font-size: 5rem;
+		}
+
+		&__subtitle {
+			font-size: 1.8rem;
+		}
+	}
+
+	.nav {
+		&.nav-mobile {
+			display: none;
+		}
+
+		&.nav-desktop {
+			display: block;
+		}
+
+		&__link {
+			padding: 0 10px;
+			font-size: 2.6rem;
+
+			&--active {
+				&::before {
+					bottom: -3px;
+					width: 80%;
+				}
+			}
+
+			&--icon {
+				font-size: 2.8rem;
+				color: $dark;
+
+				&.nav__link--active {
+					color: $orange;
+				}
+				&.nav__link--active::before {
+					display: none;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 1200px) {
+	.nav {
+		&__link {
+			font-size: 2.8rem;
+
+			&--icon {
+				font-size: 3rem;
+			}
+		}
+	}
 }
