@@ -254,6 +254,10 @@ body {
           justify-content: space-evenly;
 }
 
+.how {
+  padding-bottom: 3em;
+}
+
 .how__cards_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,8 +304,58 @@ body {
   font-size: 1.8rem;
 }
 
+.why-us {
+  padding-bottom: 3em;
+}
+
 .why-us .section-title {
   color: #fff;
+}
+
+.why-us__icons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.why-us__icon {
+  width: 330px;
+  padding: 30px 0;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.why-us__icon i {
+  position: relative;
+  width: 51px;
+  height: 51px;
+  margin-right: 20px;
+  font-size: 2.8rem;
+  color: #121212;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.why-us__icon i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (min-width: 576px) {
@@ -375,6 +429,9 @@ body {
   .how__card-description {
     font-size: 1.8rem;
   }
+  .why-us__icon {
+    font-size: 2.4rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -436,6 +493,12 @@ body {
     margin: 0 0.5em;
     padding: 12px 24px;
     font-size: 2.2rem;
+  }
+  .why-us__icon {
+    font-size: 2.6rem;
+  }
+  .why-us__icon i {
+    font-size: 3rem;
   }
 }
 
