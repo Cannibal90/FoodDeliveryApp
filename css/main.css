@@ -123,6 +123,8 @@ body {
           align-items: center;
   color: #666666;
   text-transform: uppercase;
+  caret-color: transparent;
+  cursor: pointer;
 }
 
 .brand__title {
@@ -358,6 +360,20 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.offer {
+  padding-bottom: 3em;
+  height: 100vh;
+}
+
+.reviews {
+  padding-bottom: 3em;
+  height: 100vh;
+}
+
+.reviews .section-title {
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   .section-title {
     font-size: 3.6rem;
@@ -447,6 +463,8 @@ body {
         justify-content: space-around;
     padding: 10px;
     background-color: #f1f1f1;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     z-index: 400;
   }
   .brand__title {

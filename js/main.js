@@ -1,6 +1,7 @@
 const allNavLinks = document.querySelectorAll('.nav__link')
 const navMobile = document.querySelector('.nav-mobile')
 const navBtn = document.querySelector('.hamburger')
+const logo = document.querySelector('.brand')
 
 const onLinkChangeHandler = (navLink) => {
 	allNavLinks.forEach((link) => {
@@ -19,6 +20,10 @@ const onHamburgerClickHandler = () => {
 
 allNavLinks.forEach((link) => {
 	link.addEventListener('click', () => onLinkChangeHandler(link))
+})
+
+logo.addEventListener('click', () => {
+	window.scrollTo(0, 0)
 })
 
 navBtn.addEventListener('click', onHamburgerClickHandler)

@@ -46,6 +46,8 @@ body {
 	align-items: center;
 	color: $gray;
 	text-transform: uppercase;
+	caret-color: transparent;
+	cursor: pointer;
 
 	&__title {
 		font-size: 4rem;
@@ -236,6 +238,19 @@ body {
 				transform: translate(-50%, -50%);
 			}
 		}
+	}
+}
+
+.offer {
+	padding-bottom: 3em;
+	height: 100vh;
+}
+
+.reviews {
+	padding-bottom: 3em;
+	height: 100vh;
+	.section-title {
+		color: $white;
 	}
 }
 
