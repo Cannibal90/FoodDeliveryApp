@@ -44,7 +44,7 @@
 
 .section-title {
   position: relative;
-  margin: 1em auto 1.6em;
+  padding: 1em 0 1em;
   font-size: 3rem;
   text-align: center;
   color: #121212;
@@ -54,7 +54,7 @@
 .section-title::after {
   content: '';
   position: absolute;
-  top: 40px;
+  top: 70px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -254,10 +254,6 @@ body {
           justify-content: space-evenly;
 }
 
-.how {
-  height: 100vh;
-}
-
 .how__cards_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,11 +300,16 @@ body {
   font-size: 1.8rem;
 }
 
+.why-us .section-title {
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   .section-title {
     font-size: 3.6rem;
   }
   .section-title::after {
+    top: 80px;
     width: 60%;
   }
 }
@@ -319,11 +320,10 @@ body {
     padding: 15px 0;
   }
   .section-title {
-    margin: 1.2em auto;
     font-size: 4rem;
   }
   .section-title::after {
-    top: 50px;
+    top: 90px;
   }
   .home {
     overflow: hidden;
@@ -423,11 +423,11 @@ body {
     display: none;
   }
   .section-title {
-    margin: 1.4em auto 2em;
     font-size: 4.4rem;
   }
   .section-title::after {
     width: 50%;
+    top: 100px;
   }
   .home__buttons-box {
     top: 75%;

@@ -58,11 +58,11 @@
 	}
 
 	.section-title {
-		margin: 1.4em auto 2em;
 		font-size: 4.4rem;
 
 		&::after {
 			width: 50%;
+			top: 100px;
 		}
 	}
 

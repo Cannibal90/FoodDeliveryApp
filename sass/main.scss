@@ -156,8 +156,6 @@ body {
 }
 
 .how {
-	height: 100vh;
-
 	&__cards_box {
 		display: flex;
 		justify-content: space-evenly;
@@ -194,6 +192,14 @@ body {
 			margin-top: 1em;
 			font-size: 1.8rem;
 		}
+	}
+}
+
+.why-us {
+	// height: 100vh;
+	.section-title {
+		// padding: 2em;
+		color: $white;
 	}
 }
 
