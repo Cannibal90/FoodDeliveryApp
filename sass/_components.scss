@@ -1,0 +1,62 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.dark-section {
+	background-color: $dark;
+}
+
+.white-section {
+	background-color: $light_gray;
+}
+
+.button {
+	background: none;
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	font-size: 1.8rem;
+	color: $lighter_gray;
+	cursor: pointer;
+}
+
+.primary-button {
+	background-color: $orange;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: $lighter_orange;
+	}
+}
+
+.secondary-button {
+	border: 1px solid $lighter_gray;
+	transition: border 0.3s;
+
+	&:hover {
+		border: 1px solid $orange;
+	}
+}
+
+.section-title {
+	position: relative;
+	margin: 1em auto 1.6em;
+	font-size: 3rem;
+	text-align: center;
+	color: $dark;
+	letter-spacing: 2px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
+		height: 20px;
+		background-image: url('/img/brush.png');
+		background-size: 100% 20px;
+	}
+}

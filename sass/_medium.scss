@@ -6,6 +6,15 @@
 		}
 	}
 
+	.section-title {
+		margin: 1.2em auto;
+		font-size: 4rem;
+
+		&::after {
+			top: 50px;
+		}
+	}
+
 	.home {
 		overflow: hidden;
 
@@ -46,6 +55,18 @@
 
 			.button:first-child {
 				margin-left: 0;
+			}
+		}
+	}
+
+	.how {
+		&__card {
+			&-title {
+				font-size: 2.6rem;
+			}
+
+			&-description {
+				font-size: 1.8rem;
 			}
 		}
 	}

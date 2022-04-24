@@ -1,4 +1,6 @@
 @import './colors';
+@import './components';
+
 *,
 *::before,
 *::after {
@@ -17,48 +19,6 @@ body {
 	font-size: 1.6rem;
 	color: $lighter_gray;
 	background-color: $light_gray;
-}
-
-.wrapper {
-	margin: 0 auto;
-	max-width: 1200px;
-	width: 100%;
-}
-
-.dark-section {
-	background-color: $dark;
-}
-
-.white-section {
-	background-color: $light_gray;
-}
-
-.button {
-	background: none;
-	padding: 8px 16px;
-	border-radius: 8px;
-	border: 1px solid transparent;
-	font-size: 1.8rem;
-	color: $lighter_gray;
-	cursor: pointer;
-}
-
-.primary-button {
-	background-color: $orange;
-	transition: background-color 0.3s;
-
-	&:hover {
-		background-color: $lighter_orange;
-	}
-}
-
-.secondary-button {
-	border: 1px solid $lighter_gray;
-	transition: border 0.3s;
-
-	&:hover {
-		border: 1px solid $orange;
-	}
 }
 
 .header {
@@ -195,8 +155,46 @@ body {
 	}
 }
 
-.offer {
+.how {
 	height: 100vh;
+
+	&__cards_box {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		height: 450px;
+		margin: 2em;
+		width: 300px;
+		min-width: 300px;
+		background-color: $white;
+		border-radius: 15px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		text-align: center;
+
+		&-img {
+			padding: 2em;
+			height: 60%;
+			background-size: cover;
+		}
+
+		&-title {
+			color: $dark;
+			font-weight: bold;
+			font-size: 2.2rem;
+			margin-top: 1em;
+		}
+
+		&-description {
+			color: $gray;
+			margin-top: 1em;
+			font-size: 1.8rem;
+		}
+	}
 }
 
 @import './small';

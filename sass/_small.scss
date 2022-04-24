@@ -1,2 +1,9 @@
 @media (min-width: 576px) {
+	.section-title {
+		font-size: 3.6rem;
+
+		&::after {
+			width: 60%;
+		}
+	}
 }
