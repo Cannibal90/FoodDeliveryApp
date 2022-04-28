@@ -63,7 +63,6 @@
 
 		&::after {
 			width: 50%;
-			top: 100px;
 		}
 	}
 
@@ -123,6 +122,70 @@
 
 		&__main-img {
 			margin-left: 1em;
+		}
+	}
+
+	.reviews {
+		position: relative;
+
+		&__main-box {
+			width: 70%;
+			padding-bottom: 4em;
+			padding-right: 10%;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+
+			&-description {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 1em;
+				font-size: 2.4rem;
+			}
+			&-headings {
+				&-item {
+					&-title {
+						font-size: 4.4rem;
+					}
+					&-subtitle {
+						font-size: 2.6rem;
+					}
+				}
+			}
+		}
+
+		&__review-container {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			left: 70%;
+			bottom: 0;
+			height: 60%;
+			transform: translateY(-80%);
+		}
+
+		&__review-box {
+			height: 390px;
+
+			&-profile {
+				&-img {
+					width: 100px;
+					height: 100px;
+				}
+
+				&-star {
+					font-size: 2.4rem;
+				}
+			}
+
+			&-name {
+				font-size: 2.4rem;
+				padding: 1em 0;
+			}
+
+			&-description {
+				font-size: 2rem;
+			}
 		}
 	}
 }

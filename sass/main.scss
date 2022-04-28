@@ -327,9 +327,89 @@ body {
 
 .reviews {
 	padding-bottom: 3em;
-	height: 100vh;
-	.section-title {
+	color: $dark;
+
+	&__main-box {
+		padding: 2em;
+		width: 100%;
+		background-color: $dark;
 		color: $white;
+
+		.section-title {
+			color: $white;
+		}
+
+		&-description {
+			margin: 1.6em 0;
+			font-size: 1.8rem;
+		}
+
+		&-headings {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 1em;
+			text-align: center;
+
+			&-item {
+				&-title {
+					font-size: 3rem;
+					color: $orange;
+				}
+				&-subtitle {
+					padding: 0.5em;
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	&__review-container {
+		margin: 1em;
+	}
+
+	&__review-box {
+		position: relative;
+		width: 400px;
+		height: 330px;
+		margin: 2em 1em;
+		padding: 1em 2em;
+		border-radius: 15px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+		background-color: $lighter_gray;
+
+		&-profile {
+			display: flex;
+			align-items: center;
+
+			&-img {
+				width: 80px;
+				height: 80px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+
+			&-star {
+				font-size: 2.2rem;
+				font-weight: bold;
+
+				i {
+					color: $orange;
+					padding: 0 0.5em;
+				}
+			}
+		}
+
+		&-name {
+			font-size: 2.2rem;
+			padding: 1em 0;
+		}
+
+		&-description {
+			font-size: 1.8rem;
+			color: $gray;
+		}
 	}
 }
 
