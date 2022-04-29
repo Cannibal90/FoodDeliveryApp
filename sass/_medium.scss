@@ -100,4 +100,48 @@
 			}
 		}
 	}
+
+	.faq {
+		&__title-wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			text-align: left;
+			padding: 0 2em;
+		}
+
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__subtitle {
+			padding: 0 1em;
+			margin-bottom: 0;
+		}
+
+		&__contact-button {
+			width: 200px;
+			padding: 12px 24px;
+		}
+
+		&__accordition-wrapper {
+			padding: 0 4em;
+		}
+
+		&__accordition-box {
+			&-number,
+			&-toogle-button {
+				font-size: 2.8rem;
+			}
+			&-question {
+				&-title {
+					font-size: 2.2rem;
+					text-align: left;
+				}
+				&-answer {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
 }
