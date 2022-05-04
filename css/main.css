@@ -111,6 +111,14 @@ body {
   z-index: 500;
 }
 
+.hamburger-white-bars {
+  background-color: #f1f1f1;
+}
+
+.hamburger-white-bars::before, .hamburger-white-bars::after {
+  background-color: #f1f1f1;
+}
+
 .brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -790,6 +798,16 @@ body {
   display: none;
 }
 
+.footer hr {
+  margin-top: 2em;
+}
+
+.footer__bottom-text {
+  padding-top: 1em;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .section-title {
     font-size: 3.6rem;
@@ -944,11 +962,17 @@ body {
   .footer__box-wrapper {
     padding: 0 2em;
   }
+  .footer__bottom-text {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 992px) {
   .hamburger {
     display: none;
+  }
+  html {
+    scroll-padding-top: 170px;
   }
   .header {
     position: -webkit-sticky;
@@ -1126,6 +1150,9 @@ body {
   .footer__contact-list-item {
     padding: 0.5em 2em;
     cursor: pointer;
+  }
+  .footer__bottom-text {
+    padding-top: 3em;
   }
 }
 

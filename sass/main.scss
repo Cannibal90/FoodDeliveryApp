@@ -39,6 +39,15 @@ body {
 	z-index: 500;
 }
 
+.hamburger-white-bars {
+	background-color: $light_gray;
+
+	&::before,
+	&::after {
+		background-color: $light_gray;
+	}
+}
+
 //BRAND
 .brand {
 	display: flex;
@@ -570,6 +579,16 @@ body {
 
 	&__contact-box {
 		display: none;
+	}
+
+	hr {
+		margin-top: 2em;
+	}
+
+	&__bottom-text {
+		padding-top: 1em;
+		font-size: 1.2rem;
+		text-align: center;
 	}
 }
 

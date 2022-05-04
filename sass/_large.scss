@@ -3,6 +3,10 @@
 		display: none;
 	}
 
+	html {
+		scroll-padding-top: 170px;
+	}
+
 	.header {
 		position: sticky;
 		top: 0;
@@ -189,6 +193,10 @@
 					cursor: pointer;
 				}
 			}
+		}
+
+		&__bottom-text {
+			padding-top: 3em;
 		}
 	}
 }
