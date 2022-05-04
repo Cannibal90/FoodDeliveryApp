@@ -102,6 +102,95 @@
 			padding: 15px 30px;
 		}
 	}
+
+	.footer {
+		padding-bottom: 3em;
+		padding-top: 15em;
+		margin-top: 2em;
+		position: relative;
+
+		&__newsletter {
+			position: absolute;
+			top: -8%;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 80%;
+			max-width: 1200px;
+			height: 250px;
+			border-radius: 15px;
+			background-image: $black_gradient, url('../img/footer.jpg');
+			background-position: center;
+			background-size: cover;
+
+			&-box {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&-title {
+				margin: 0 4em;
+				font-size: 3rem;
+				font-weight: normal;
+				text-align: center;
+				letter-spacing: 2px;
+			}
+
+			&-form {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 50%;
+				height: 60px;
+				border-radius: 15px;
+				padding: 0 2em;
+
+				&-box {
+					position: relative;
+					margin-top: 1em;
+					width: 100%;
+					height: 60px;
+				}
+
+				&-button {
+					position: absolute;
+					right: 27%;
+					top: 20%;
+				}
+			}
+		}
+
+		&__box-wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&__contact-box {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__contact {
+			font-size: 1.8rem;
+
+			&-title {
+				padding: 2em;
+			}
+			&-list {
+				color: $light_gray;
+				list-style: none;
+
+				&-item {
+					padding: 0.5em 2em;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1100px) {
@@ -217,5 +306,9 @@
 				}
 			}
 		}
+	}
+
+	.dark-section {
+		background-image: url('../img/food_icons_big.png');
 	}
 }

@@ -510,6 +510,69 @@ body {
 	}
 }
 
+.footer {
+	padding-bottom: 2em;
+
+	&__newsletter {
+		display: none;
+	}
+
+	&__box-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo-box {
+		display: flex;
+		flex-direction: column;
+		padding: 2em;
+
+		.brand {
+			&__title {
+				color: $white;
+			}
+			&__subtitle {
+				color: $white;
+			}
+		}
+
+		&-address {
+			padding: 1em 0;
+			text-align: center;
+			letter-spacing: 2px;
+		}
+
+		&-social {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding-top: 1em;
+
+			&-icon {
+				font-size: 3rem;
+				transition: color 0.5s;
+				cursor: pointer;
+
+				&:nth-of-type(1):hover {
+					color: #4267b2;
+				}
+				&:nth-of-type(2):hover {
+					color: #c13584;
+				}
+				&:nth-of-type(3):hover {
+					color: #1da1f2;
+				}
+			}
+		}
+	}
+
+	&__contact-box {
+		display: none;
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';
