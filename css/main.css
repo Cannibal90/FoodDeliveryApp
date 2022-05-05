@@ -749,6 +749,12 @@ body {
   padding: 2em;
 }
 
+.footer__logo-box .brand {
+  caret-color: transparent;
+  cursor: pointer;
+  z-index: 5;
+}
+
 .footer__logo-box .brand__title {
   color: #fff;
 }
@@ -815,6 +821,9 @@ body {
   .section-title::after {
     bottom: 20px;
     width: 60%;
+  }
+  .home__text-box-subtitle {
+    font-size: 1.8rem;
   }
   .reviews__review-box {
     margin: 2em 1em;

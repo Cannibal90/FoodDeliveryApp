@@ -8,6 +8,14 @@
 		}
 	}
 
+	.home {
+		&__text-box {
+			&-subtitle {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
 	.reviews {
 		&__review-box {
 			margin: 2em 1em;
